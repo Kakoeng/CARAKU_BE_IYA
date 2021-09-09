@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CARAKU BE IYA</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<!----- HEADER ----->
+<section class="container">
+	<header>
+		<section class="header1">
+			<nav>
+				<a href="index.html"><img src="img/logokiri.png"></a>
+				<div class="nav-link">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="leaderofficer.html">LEADER & OFFICER</a></li>
+						<li><a href="member.html">MEMBER</a></li>
+						<li><a href="join.php">JOIN</a></li>
+					</ul>
+				</div>
+			</nav>
+		<div class="medsos">
+			<h1>FOLLOW US</h1>
+			<ul>
+				<li><a href="#"><i class="fab fa-instagram"></i> CARAKU_BE_IYA</a></li>
+				<li><a href="https://discord.gg/CjTCDef2Sb"><i class="fab fa-discord"></i> CARAKU BE IYA</a></li>
+			</ul>	
+		</div>
+		<div class="scroll-item">
+			<ul>
+				<li>
+					<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+				</li>
+			</ul>
+		</div>
+		</section>
+	</header>
+</section>
+<!------ ABOUT ------->
+<div class="container1 reveal">
+	<section class="about">
+		<h1>TENTANG GUILD</h1>
+		<div class="row5">
+			<div class="abt-col">
+				<img src="img/guild.jpg">
+				<p>@21/08/2021</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!----- OPMEM ----->
+
+<div class="container1 reveal">
+	<section class="opmem">
+		<h2>OPEN MEMBER SYARAT DI BAWAH INI</h2>
+		<p>~KLIK GAMBAR UNTUK DOWNLOAD~</p>
+		<div class="row">
+			<div class="om-col">
+				<h3>OPEM MEMBER FOR GIRLS</h3>
+				<a href="https://www.mediafire.com/view/g1sceuks25gcurf/opmemgirl.png/file"><img src="img/opmemgirl.png"></a>
+			</div>
+			<div class="om-col">
+				<h3>OPEM MEMBER FOR MAN</h3>
+				<p></p>
+				<a href="https://www.mediafire.com/view/4g88hbfvxma6h9o/opmem.jpg/file"><img src="img/opmem.jpg"></a>
+			</div>
+		</div>
+	</section>
+
+<!------ CHANGE NAME ------>
+	<section class="cn reveal">
+		<h1>KAMU MAU GANTI NICK NAME?</h1>
+		<div class="row4">
+				<div class="cn-col">
+					<h2>COPY FORMAT DI BAWAH INI</h2>
+					<p>(nick)ㅤCBI</p>
+					<p>CONTOH :<br>[KAKOENGㅤCBI]<br>[LEADERㅤCBI]</p>
+					<img src="img/cnth.jpg">
+					<p>!CONTOH GAMBAR!</p>
+					<h3>NOTE :<br> ADA JARAK ANTARA NICK DENGAN CBI<br>DAN BUKAN SPACE BIASA</h3>
+				</div>
+		</div>
+	</section>
+</div>
+
+<!----- FOOTER ----->
+<section class="ft">
+	<div class="row-ft">
+		<div class="cr">
+			<p> Copyright &copy; 2021 CARAKUBEIYA<br>Created by <p1>kakoeng</p1></p>
+		</div>
+	</div>
+</section>
+<!--------- JAVA SC --------->
+<script type = "text/javascript">
+window.addEventListener('scroll', reveal)
+
+function reveal(){
+	var reveals = document.querySelectorAll('.reveal');
+
+	for(var i = 0; i < reveals.length; i++){
+
+		var windowheight = window.innerHeight;
+		var revealtop = reveals[i].getBoundingClientRect().top;
+		var revealpoint = 150;
+
+		if(revealtop < windowheight - revealpoint){
+			reveals[i].classList.add('active');
+		}
+		else{
+			reveals[i].classList.remove('active');
+		}
+	}
+}
+</script>
+
+
+</body>
+</html>

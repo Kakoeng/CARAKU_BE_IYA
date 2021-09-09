@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MEMBER</title>
+	<link rel="stylesheet" type="text/css" href="css/member.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!----- HEADER ----->
+<section class="container">
+	<header>
+		<section class="header1">
+			<nav>
+				<a href="index.html"><img src="img/logokiri.png"></a>
+				<div class="nav-link">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="leaderofficer.html">LEADER & OFFICER</a></li>
+						<li><a href="member.html">MEMBER</a></li>
+						<li><a href="join.php">JOIN</a></li>
+					</ul>
+				</div>
+			</nav>
+		<div class="medsos">
+			<h1>FOLLOW US</h1>
+			<ul>
+				<li><a href=""><i class="fab fa-instagram"></i> CARAKU_BE_IYA</a></li>
+				<li><a href="https://discord.gg/CjTCDef2Sb"><i class="fab fa-discord"></i> CARAKU BE IYA</a></li>
+			</ul>	
+		</div>
+		<div class="scroll-item">
+			<ul>
+				<li>
+					<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+				</li>
+			</ul>
+		</div>
+		</section>
+	</header>
+</section>
+<!----- DATA PLAYER ------>
+<div class="container1">
+	<section class="member">
+		<h1 class="reveal">CARAKU BE IYA</h1>
+		<h3 class="reveal">MEN'S TEAM</h3>
+		<div class="row">
+			<div class="m-col reveal">
+				<h2>SOUL CRASH</h2>
+				<img src="img/boy.png">
+				<h4>FARHAN,ANDRE,DOON,ERLANN</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>ALESAN</h2>
+				<img src="img/boy5.png">
+				<h4>KEVIN,JULL,ANTILEG,BAYUU,PIYON</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>BADUT</h2>
+				<img src="img/boy.png">
+				<h4>ROZID , BADUT , ZET'30 , JARZ</h4>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="m-col reveal">
+				<h2>BAGONG ID</h2>
+				<img src="img/boy.png">
+				<h4>ARUL,PAHRI,OFFICER,GUS'29</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>AING MACAN</h2>
+				<img src="img/boy5.png">
+				<h4>BAGOLZ,RAFFI,PIWW,BONDAN,CHIFUYU</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>INDIEMARET</h2>
+				<img src="img/boy.png">
+				<h4>KEBOBGR,BOWO,SANZ,HENCET</h4>
+			</div>
+		</div>
+		<h3 class="reveal">GIRL'S TEAM</h3>
+		<div class="row3">
+			<div class="m-col reveal">
+				<h2>PINK SAMURAI</h2>
+				<img src="img/girl.png">
+				<h4>RANYAA , ZYRO , RELL , NILAM</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>JAGOAN NEON</h2>
+				<img src="img/girl.png">
+				<h4>RANI,LISA4U,ALLUNA,MELL,MORKE</h4>
+			</div>
+			<div class="m-col reveal">
+				<h2>KOSONG</h2>
+				<img src="img/girl.png">
+			</div>
+		</div>
+	</section>
+</div>
+
+<!----- FOOTER ----->
+<section class="ft">
+	<div class="row-ft">
+		<div class="cr">
+			<p> Copyright &copy; 2021 CARAKUBEIYA<br>Created by <p1>kakoeng</p1></p>
+		</div>
+	</div>
+</section>
+
+<!--------- JAVA SC --------->
+<script type = "text/javascript">
+	window.addEventListener('scroll', reveal)
+	
+	function reveal(){
+		var reveals = document.querySelectorAll('.reveal');
+	
+		for(var i = 0; i < reveals.length; i++){
+	
+			var windowheight = window.innerHeight;
+			var revealtop = reveals[i].getBoundingClientRect().top;
+			var revealpoint = 150;
+	
+			if(revealtop < windowheight - revealpoint){
+				reveals[i].classList.add('active');
+			}
+			else{
+				reveals[i].classList.remove('active');
+			}
+		}
+	}
+	</script>
+
+
+</body>
+</html>
